@@ -109,3 +109,64 @@
 .containerSearch .icon {
   width: 30px;
 }
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+
+  .header .iconMenu {
+    display: none;
+  }
+
+  .header .navbar {
+    order: 1;
+    height: auto;
+    flex: 1;
+    display: flex;
+    padding-top: 0;
+  }
+
+  .header .navbar ul {
+    display: flex;
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+
+  .header .navbarLink {
+    border-bottom: none;
+    padding: .5rem 0;
+    margin-right: .5rem;
+    font-size: .8rem;
+  }
+
+  .header .navbarLink:last-child {
+    margin-right: 0;
+  }
+
+  .header .navbarLink a {
+    padding: .5rem 1rem;
+    background-color: transparent;
+    transition: background-color 320ms ease-in-out;
+  }
+
+  .header .navbarLink.active a {
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  .header .navbarLink:hover a {
+    background-color: #dfdfdf;
+  }
+  
+  .containerSearch {
+    order: 2;
+  }
+
+
+  .containerSearch .icon {
+    width: 25px;
+  }
+
+}
+
+
+/* FIN Header */
