@@ -8,6 +8,8 @@
 .header .container {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .header .logo {
@@ -143,7 +145,7 @@
   }
 
   .header .navbarLink a {
-    padding: .5rem 1rem;
+    padding: .3rem 1rem;
     background-color: transparent;
     transition: background-color 320ms ease-in-out;
   }
