@@ -1,3 +1,111 @@
-body {
-  font-family: 'Questrial', sans-serif;
+/* Header */
+.header {
+  padding: 1rem;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 5%);
+  overflow: hidden;
+}
+
+.header .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header .logo {
+  width: 170px;
+  order: 0;
+  margin-right: auto;
+}
+
+.header .navbar {
+  padding-top: .5rem;
+  order: 3;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  transition: 320ms ease-in-out;
+}
+
+.header .navbar.active {
+  height: 210px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header .navbarLink {
+  text-align: center;
+  padding: .8rem .5rem;
+  border-bottom: 1px solid #dfdfdf;
+  letter-spacing: 3px;
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--txt-color);
+}
+
+ /* Icon Menu */
+.header .iconMenu {
+  order: 2;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.header .iconMenu .hamburger-icon {
+  width: 40px;
+  height: 6px;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  position: relative;
+  transition: 320ms ease-in-out;
+}
+
+.header .iconMenu .hamburger-icon::before,
+.header .iconMenu .hamburger-icon::after {
+  content: '';
+  width: 100%;
+  height: 6px;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  position: absolute;
+  transition: 320ms ease-in-out;
+}
+
+.header .iconMenu .hamburger-icon::before {
+  transform: translateY(-12px);
+}
+
+.header .iconMenu .hamburger-icon::after {
+  transform: translateY(12px);
+}
+
+ /* Active Menu */
+.header .iconMenu.active .hamburger-icon {
+  background-color: transparent;
+  transform: translateX(40px);
+}
+
+.header .iconMenu.active .hamburger-icon::before {
+  transform: rotate(45deg) translate(-28px, 28px);
+}
+
+.header .iconMenu.active .hamburger-icon::after {
+  transform: rotate(-45deg) translate(-28px, -28px);
+}
+
+ /* Search */
+.containerSearch {
+  order: 1;
+  margin: auto 0;
+}
+
+.containerSearch .icon {
+  width: 30px;
 }

@@ -1,0 +1,12 @@
+body {
+  font-family: 'Questrial', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+:root {
+  --primary-color: #ff5672;
+  --txt-color: #707070;
+  --social-color: #c2cfd7;
+}
